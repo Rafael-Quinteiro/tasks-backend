@@ -23,6 +23,9 @@ public class TaskController {
 	@Autowired
 	private TaskRepo todoRepo;
 	
+	@Autowired
+	private TaskRepo todoRepo;
+	
 	@GetMapping
 	public List<Task> findAll() {
 		return todoRepo.findAll();
