@@ -42,9 +42,4 @@ public class TaskController {
 		Task saved = todoRepo.save(todo);
 		return new ResponseEntity<Task>(saved, HttpStatus.CREATED);
 	}
-	
-	public void linhaDuplicada() {
-		System.out.println("Teste");
-		System.out.println("Teste");
-	}
 }
