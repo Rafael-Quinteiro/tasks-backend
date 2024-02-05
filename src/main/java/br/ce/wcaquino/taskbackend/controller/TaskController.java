@@ -23,9 +23,6 @@ public class TaskController {
 	@Autowired
 	private TaskRepo todoRepo;
 	
-	@Autowired
-	private TaskRepo todoRepo;
-	
 	@GetMapping
 	public List<Task> findAll() {
 		return todoRepo.findAll();
@@ -44,5 +41,10 @@ public class TaskController {
 		}
 		Task saved = todoRepo.save(todo);
 		return new ResponseEntity<Task>(saved, HttpStatus.CREATED);
+	}
+	
+	public void linhaDuplicada() {
+		System.out.println("Teste");
+		System.out.println("Teste");
 	}
 }
